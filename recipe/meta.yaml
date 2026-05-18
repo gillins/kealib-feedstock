@@ -65,6 +65,7 @@ outputs:
         - cross-python_{{ target_platform }}     # [osx and build_platform != target_platform]
       host:
         - python
+        - highfive
         - numpy
         - pybind11
         # ensure we get a recent awkward... By default an extremely old one can be selected.
