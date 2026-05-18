@@ -7,8 +7,8 @@ package:
 source:
   url: https://github.com/ubarsc/kealib/releases/download/kealib-{{ version }}/kealib-{{ version }}.tar.gz
   sha256: f1c61adc37102d99189da22b4bb7a6ee7e633a521562f4c3cc44d0261d402a5e
-#  patches:
-#    - pythonexe.patch  # [win]
+  patches:
+    - pythonexe.patch  # [win]
 
 build:
   number: 0
@@ -24,6 +24,7 @@ requirements:
   host:
     - hdf5
     - highfive
+    - zlib
   run:
     - hdf5
 
@@ -44,6 +45,7 @@ outputs:
       host:
         - hdf5
         - highfive
+        - zlib
       run:
         - hdf5
 
