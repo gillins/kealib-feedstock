@@ -43,10 +43,9 @@ outputs:
         - make  # [unix]
       host:
         - hdf5
-        - zlib
+        - highfive
       run:
         - hdf5
-        - zlib
 
   - name: pykealib
     script: build_python.sh  # [unix]
